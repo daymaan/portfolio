@@ -41,7 +41,7 @@
                         <h1>WEB DEVELOPER</h1>
                     </div>
                     <div class="introduction-image">
-                        <img src="/images/zyMix.jpg" alt="">
+                        <img src="images/zyMix.jpg" alt="">
                     </div>
                     
                 </div>
@@ -60,7 +60,7 @@
         <div class="about-me" id="about">
             <div class="about-intro">
                 <div class="about-title">
-                    <h1>ABOUT ME</h1>
+                   <center><h1>ABOUT ME</h1></center> 
                 </div>
                 <div class="about-content">
                     <h3>I'm a frontend developer located in Bulan, Sorsogon. I have a passion for UI effects, 
@@ -77,10 +77,6 @@
                 
 
             </div>
-            <div class="about-content-image">
-                <img src="/images/image3-removebg-preview.png" alt="">
-
-                </div>
         </div>
 
         <div class="my-skills" id="skills">
@@ -146,27 +142,27 @@
             
             <div class="project-content" id="projectSlider">
                 <div class="project">
-                    <img src="/images/project1.jpg" alt="">
+                    <img src="images/project1.jpg" alt="">
                 </div>
                 
                 <div class="project">
-                    <img src="/images/project2.png" alt="">
+                    <img src="images/project2.png" alt="">
                 </div>
             
                 <div class="project">
-                    <img src="/images/project3.jpg" alt="">
+                    <img src="images/project3.jpg" alt="">
                 </div>
 
                 <div class="project">
-                    <img src="/images/project4.jpg" alt="">
+                    <img src="images/project4.jpg" alt="">
                 </div>
 
                 <div class="project">
-                    <img src="/images/project5.jpeg" alt="">
+                    <img src="images/project5.jpeg" alt="">
                 </div>
 
                 <div class="project">
-                    <img src="/images/project2.png" alt="">
+                    <img src="images/project2.png" alt="">
                 </div>
             
             </div>
@@ -185,7 +181,7 @@
 
                 <div class="school">
                     <div class="school-picture">
-                        <img src="/images/bnhs.jpg" alt="">
+                        <img src="images/bnhs.jpg" alt="">
 
                     </div>
 
@@ -204,7 +200,7 @@
 
                 <div class="school">
                     <div class="school-picture">
-                        <img src="/images/bnhs.jpg" alt="">
+                        <img src="images/bnhs.jpg" alt="">
                     </div>
                     <div class="school-info">
                         <div class="school-info-title">
@@ -221,7 +217,7 @@
                 </div>
                 <div class="school">
                     <div class="school-picture">
-                        <img src="/images/sorsu.png" alt="">
+                        <img src="images/sorsu.png" alt="">
                     </div>
 
                     <div class="school-info">
@@ -253,28 +249,22 @@
 
 
     <script>
-       // JavaScript for image slider
        const projectSlider = document.getElementById('projectSlider');
        const projects = projectSlider.querySelectorAll('.project');
 
        let currentIndex = 0;
-       const intervalTime = 3000; // Time in milliseconds between slides
+       const intervalTime = 3000; 
 
        function showNextSlide() {
-           // Hide the current slide
            projects[currentIndex].style.display = 'none';
            
-           // Increment the index or reset to 0 if at the end
            currentIndex = (currentIndex + 1) % projects.length;
            
-           // Show the next slide
            projects[currentIndex].style.display = 'block';
        }
 
-       // Show the first slide initially
        projects[currentIndex].style.display = 'block';
 
-       // Automatically switch to the next slide at intervals
        setInterval(showNextSlide, intervalTime);
     </script>
 </body>
