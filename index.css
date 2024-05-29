@@ -1,18 +1,20 @@
-*{
+/* Resetting default browser styles */
+* {
     list-style-type: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
 }
 
-
-nav{
+/* Navigation bar styles */
+nav {
     position: fixed;
     background-color: rgb(9, 12, 20);
     width: 14%;
     height: 100vh;
 }
-.title{
+
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,63 +23,62 @@ nav{
     padding-top: 5vh;
     padding-bottom: 15vh;
 }
-.title a{
+
+.title a {
     color: white;
-     font-family: "Kanit";
+    font-family: "Kanit";
     font-weight: 200; 
     font-style: normal; 
     letter-spacing: 5px; 
-
+    transition: background-color 0.3s ease;
 }
-.sidenav-links{
+
+.title a:hover {
+    background-color: white;
+    color: black;
+    padding: 1vw;
+}
+
+.sidenav-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%; 
 }
-.sidenav-links h4{
+
+.sidenav-links h4 {
     margin: 10px 0;
     margin-bottom: 10vh;
-
-}
-.sidenav-links a{
-    color: white;
-     font-family: "Kanit";
-    font-weight: 200; 
-    font-style: normal; 
-    letter-spacing: 5px; 
 }
 
 .sidenav-links a {
+    color: white;
+    font-family: "Kanit";
+    font-weight: 200; 
+    font-style: normal; 
+    letter-spacing: 5px; 
     transition: color 0.3s ease;
 }
 
 .sidenav-links a:hover {
     color: orange;
 }
-.title a{
-    transition: background-color 0.3s ease;
-}
 
-.title a:hover {
-   background-color: white;
-   color: black;
-   padding: 1vw;
-}
-
-.container{
+/* Container for the main content */
+.container {
     background-color: black;
     width: 86%;
     height: auto;
     margin-left: 14%;
 }
-.intro-container{
+
+.intro-container {
     width: 100%;
     height: 100vh;
-
 }
-.introduction{
+
+.introduction {
     color: white;
     padding-left: 5vw;
     display: flex;
@@ -85,26 +86,30 @@ nav{
     align-items: center;
     height: 70vh;
     font-family: "Kanit";
-        font-weight: 200;
-        font-style: normal;
-        letter-spacing: 5px;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 5px;
 }
-.introduction-text h1{
-  font-size: 8.7vh;
-  font-family: "Reddit Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+
+.introduction-text h1 {
+    font-size: 8.7vh;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-.introduction-image{
+
+.introduction-image {
     margin-bottom: 12vh;
 }
-.introduction-image img{
+
+.introduction-image img {
     width: 30vw;
     margin-right: 5vw;
     margin-top: 35vh;
 }
-.introduction2{
+
+.introduction2 {
     color: gray;
     padding-left: 5vw;
     font-family: "Reddit Mono", monospace;
@@ -112,44 +117,49 @@ nav{
     font-weight: 400;
     font-style: normal;
 }
-.introduction2 h3{
+
+.introduction2 h3 {
     font-size: 4vh;
     margin-bottom: 3vh;
 }
-.button{
+
+.button {
     width: 10vw;
     padding: 2vh;
     padding-left: 3vw;
     padding-right: 3vw;
     border: 1px solid orange;
 }
-.button a{
+
+.button a {
     color: white;
     font-size: 3vh;
 }
 
-
-.about-me{
+/* About me section styles */
+.about-me {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.about-intro{
+
+.about-intro {
     color: white;
     padding-left: 5vw;
     height: 70vh;
 }
-.about-title{
-   
+
+.about-title {
     font-size: 6vh;
     font-family: "Kanit";
-        font-weight: 100;
-        font-style: normal;
-        letter-spacing: 5px;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 5px;
 }
-.about-content{
+
+.about-content {
     width: 34vw;
     margin-top: 5vh;
     font-size: 2vh;
@@ -157,42 +167,50 @@ nav{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    
 }
-.about-content h3{
+
+.about-content h3 {
     margin-bottom: 3vh;
 }
-.about-content-image{
+
+.about-content-image {
     width: 100%;
 }
-.about-content-image img{
+
+.about-content-image img {
     width: 35vw;
     height: 85vh;
     margin-bottom: 25vh;
     margin-left: 5vw;
 }
-.skills{
+
+/* Skills section styles */
+.skills {
     width: 100%;
     height: 100vh;
 }
-.skills-intro{
+
+.skills-intro {
     color: white;
     padding-left: 5vw;
     height: 70vh;
 }
-.skills-title{
+
+.skills-title {
     font-size: 6vh;
     font-family: "Kanit";
-        font-weight: 100;
-        font-style: normal;
-        letter-spacing: 5px;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 5px;
 }
-.skills-content{
+
+.skills-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.skills-text{
+
+.skills-text {
     width: 34vw;
     margin-top: 5vh;
     font-size: 2vh;
@@ -201,24 +219,25 @@ nav{
     font-weight: 400;
     font-style: normal;
 }
-.skills-bar{
+
+.skills-bar {
     height: 45vh;
     width: 35%;
     margin-right: 5vw;
-
 }
-.skills-bar h6{
+
+.skills-bar h6 {
     margin-bottom: 1vh;
 }
+
 .skill-bar {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
     overflow: hidden;
-    
-  }
-  
-  .skill {
+}
+
+.skill {
     color: white;
     text-align: center;
     padding: 0 0;
@@ -227,49 +246,45 @@ nav{
     height: 1vh;
     background-color: white;
     margin-bottom: 2vh;
-
-  }
-  
-  .html {
-    background-color: #e44d26;
-    width: 50%;
-  }
-  
-  .css {
-    background-color: #264de4; 
-    width: 65%;
-
-  }
-  
-  .javascript {
-    background-color: #f0db4f; 
-    width: 45%;
-  }
-  
-  .tailwind {
-    background-color: #38b2ac; 
-    width: 60%;
-  }
-  
-  .php {
-    background-color: #8892be; 
-    width: 30%;
-  }
-  
-  .laravel {
-    background-color: #ff2d20;
-    width: 25%;
-  }
-
-
-  
-.projects{
-    width: 100%;
-    height: 100vh;
-
 }
 
-.project-intro{
+.html {
+    background-color: #e44d26;
+    width: 50%;
+}
+
+.css {
+    background-color: #264de4; 
+    width: 65%;
+}
+
+.javascript {
+    background-color: #f0db4f; 
+    width: 45%;
+}
+
+.tailwind {
+    background-color: #38b2ac; 
+    width: 60%;
+}
+
+.php {
+    background-color: #8892be; 
+    width: 30%;
+}
+
+.laravel {
+    background-color: #ff2d20;
+    width: 25%;
+}
+
+/* Projects section styles */
+.projects {
+    width: 100%;
+    height: 100vh;
+}
+
+.project-intro {
     color: white;
     padding-left: 5vw;
     height: 25vh;
@@ -277,7 +292,8 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.project-title{
+
+.project-title {
     font-size: 6vh;
     font-family: "Kanit";
     font-weight: 100;
@@ -285,31 +301,31 @@ nav{
     letter-spacing: 5px;
 }
 
-
 .project {
-    display: none;  /* Display projects in a row */
+    display: none;
     margin-left: 5vw;
 }
 
 .project img {
     width: 95%;
-    height: 60vh; /* Maintain aspect ratio */
+    height: 60vh;
     border-radius: 10px;
-
 }
 
-.education{
+/* Education section styles */
+.education {
     width: 100%;
     height: 100vh;
     margin-bottom: 25vh;
 }
-.education-intro{
+
+.education-intro {
     color: white;
     padding-left: 5vw;
     height: 15vh;
- 
 }
-.education-title{
+
+.education-title {
     font-size: 6vh;
     font-family: "Kanit";
     font-weight: 100;
@@ -322,55 +338,62 @@ nav{
     align-items: center;
 }
 
-.school{
+.school {
     width: 100%;
     height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 8vh;
-    
 }
-.school-picture{
+
+.school-picture {
     width: 50%;
     margin-right: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.school-picture img{
+
+.school-picture img {
     width: 50%;
     height: 30vh;
-   
 }
-.school-info{
+
+.school-info {
     width: 50%;
 }
-.school-info-title{
+
+.school-info-title {
     margin-bottom: 5vh;
-    font-size: 4vh;
-    
+    font-size: 2vw;
     font-family: "Kanit";
     font-weight: 100;
     font-style: normal;
 }
-.school-info-desc{
+
+.school-info-desc {
     width: 85%;
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 1vw;
 }
-.contact-me{
+
+/* Contact me section styles */
+.contact-me {
     width: 100%;
     height: 100vh;
 }
-.contact-intro{
+
+.contact-intro {
     color: white;
     padding-left: 5vw;
     height: 25vh;
 }
-.contact-title{
+
+.contact-title {
     font-size: 6vh;
     font-family: "Kanit";
     font-weight: 100;
@@ -378,4 +401,170 @@ nav{
     letter-spacing: 5px;
     margin-bottom: 25vh;
     height: 20vh;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    nav {
+        width: 20%;
+    }
+
+    .container {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .introduction-text h1,
+    .about-title,
+    .skills-title,
+    .project-title,
+    .education-title,
+    .contact-title {
+        font-size: 4.5vh;
+    }
+
+    .button {
+        width: 15vw;
+        padding: 2vh 3vw;
+    }
+
+    .skills-text,
+    .about-content {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        width: 25%;
+    }
+
+    .container {
+        width: 75%;
+        margin-left: 25%;
+    }
+
+    .introduction,
+    .about-me,
+    .skills-content,
+    .school {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .introduction-text h1,
+    .about-title,
+    .skills-title,
+    .project-title,
+    .education-title,
+    .contact-title {
+        font-size: 4vh;
+    }
+
+    .button {
+        width: 20vw;
+        padding: 1.5vh 2.5vw;
+    }
+
+    .skills-text,
+    .about-content {
+        width: 60vw;
+    }
+
+    .school-picture,
+    .school-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .school-picture img {
+        width: 80%;
+    }
+
+    .skills-bar,
+    .introduction-image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .introduction,
+    .about-me,
+    .skills-content,
+    .school,
+    .project-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction-text h1,
+    .about-title,
+    .skills-title,
+    .project-title,
+    .education-title,
+    .contact-title {
+        font-size: 3.5vh;
+        text-align: center;
+    }
+
+    .button {
+        width: 30vw;
+        padding: 1vh 2vw;
+    }
+
+    .skills-text,
+    .about-content {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .skills-bar,
+    .introduction-image img {
+        width: 80%;
+    }
+
+    .school-picture img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    .introduction-text h1,
+    .about-title,
+    .skills-title,
+    .project-title,
+    .education-title,
+    .contact-title {
+        font-size: 3vh;
+    }
+
+    .button {
+        width: 40vw;
+        padding: 1vh 1.5vw;
+    }
+
+    .skills-text,
+    .about-content {
+        width: 90vw;
+    }
+
+    .skills-bar,
+    .introduction-image img {
+        width: 90%;
+    }
+
+    .school-picture img {
+        width: 50%;
+    }
 }
